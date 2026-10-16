@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "author": "Ziyan Abdul",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": -66.6, "left": 28.2, "attrs": {} },
+    { "type": "wokwi-ds18b20", "id": "temp1", "top": 8.47, "left": -43.92, "attrs": {} },
+    { "type": "wokwi-dht22", "id": "dht1", "top": -86.1, "left": 321, "attrs": {} }
+  ],
+  "connections": [
+    [ "dht1:VCC", "uno:5V", "red", [ "v0" ] ],
+    [ "dht1:SDA", "uno:2", "green", [ "v0" ] ],
+    [ "dht1:GND", "uno:GND.1", "black", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
