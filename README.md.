@@ -1,0 +1,122 @@
+# 🌡️ Smart Environmental Monitoring System
+
+A virtual environmental monitoring project built using Arduino Uno Rev3 and a DHT22 temperature and humidity sensor. The system monitors environmental conditions and generates automatic alerts when predefined thresholds are reached.
+
+## 📌 Project Overview
+
+Environmental monitoring helps us understand changes in temperature and humidity. This project demonstrates how a microcontroller can collect sensor readings, process the data, and generate alerts when environmental conditions cross specified limits.
+
+The project is developed and tested using the Wokwi online electronics simulator, without requiring physical hardware.
+
+## ✨ Features
+
+* 🌡️ Temperature monitoring in Celsius.
+* 💧 Relative humidity monitoring in percentage.
+* 🚨 High-temperature alert when temperature reaches 35°C.
+* 💦 High-humidity alert when relative humidity reaches 70%.
+* 🔄 Periodic sensor readings every two seconds.
+* 🛡️ Basic handling of failed sensor readings.
+* 💻 Serial Monitor output for real-time observation.
+* 💰 Zero hardware cost using virtual simulation.
+
+## 🛠️ Technologies Used
+
+* Arduino Uno Rev3
+* DHT22 temperature and humidity sensor
+* Arduino C++
+* Wokwi online simulator
+* DHT sensor library
+* Adafruit Unified Sensor library
+
+## 🔌 Circuit Connections
+
+| DHT22 Pin  | Arduino Uno Rev3 |
+| ---------- | ---------------- |
+| VCC        | 5V               |
+| SDA / DATA | Digital Pin 2    |
+| NC         | Not connected    |
+| GND        | GND              |
+
+## ⚙️ How It Works
+
+1. The Arduino initializes the DHT22 sensor.
+2. The sensor provides temperature and humidity readings.
+3. The Arduino displays the readings in the Serial Monitor.
+4. If the temperature reaches or exceeds 35°C, a high-temperature alert appears.
+5. If relative humidity reaches or exceeds 70%, a high-humidity alert appears.
+6. The system repeats the process every two seconds.
+
+## 📊 Example Output
+
+```text
+================================
+ SMART ENVIRONMENTAL MONITOR
+================================
+Temperature: 24.00 °C
+Humidity: 40.00 %
+--------------------------------
+```
+
+Example high-temperature alert:
+
+```text
+Temperature: 38.00 °C
+Humidity: 40.00 %
+ALERT: High temperature!
+```
+
+These are illustrative examples. Actual readings depend on the sensor settings in the simulator.
+
+## 🚀 How to Run the Project
+
+1. Open the project in the Wokwi Arduino simulator.
+2. Ensure the DHT22 connections match the circuit connection table.
+3. Install or enable the required sensor libraries.
+4. Start the simulation.
+5. Open the Serial Monitor.
+6. Observe the temperature and humidity readings.
+7. Change the simulated sensor values to test the alert conditions.
+
+## 📁 Project Files
+
+* `sketch.ino` — Arduino source code.
+* `libraries.txt` — Required Arduino libraries.
+* `README.md` — Project documentation.
+* `diagram.json` — Circuit configuration, to be added.
+
+## 🎯 Learning Outcomes
+
+Through this project, I practised:
+
+* Writing Arduino C++ code.
+* Interfacing a simulated environmental sensor.
+* Reading and processing sensor data.
+* Implementing conditional alert logic.
+* Debugging sensor-reading errors.
+* Using an online electronics simulator.
+* Documenting and publishing a project on GitHub.
+
+## 🔮 Future Improvements
+
+* Add a live graphical dashboard.
+* Display sensor readings on an LCD.
+* Introduce historical data logging and charts.
+* Add configurable alert thresholds.
+* Explore IoT-based remote monitoring.
+* Extend the system with additional environmental sensors.
+
+## ⚠️ Project Scope
+
+This is an educational simulation project. It demonstrates basic environmental monitoring logic but has not been validated using physical hardware.
+
+## 👨‍💻 Author
+
+**Abdul Ziyan**
+
+Computer Science and Engineering (Data Science) Student
+
+Interested in Python, data science, and practical technology projects.
+
+---
+
+⭐ If you find this project useful, consider giving the repository a star!
